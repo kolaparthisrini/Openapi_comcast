@@ -1,0 +1,141 @@
+Open API
+====================
+Day1:
+-----
+>https://github.com/kolaparthisrini/Openapi_comcast
+>https://github.com/swagger-api/swagger-codegen
+
+Softwares:
+===========
+1)jdk1.8
+2)Eclipse-luna/neon
+3)Notepad++
+4)chrome
+5)swagger codegen
+6)swagerhub account
+7)Postman
+>>For mac users,Notepad++,use Atom/brackets/sublime
+=================================================================
+Open API:
+
+>protcol: set of rules and regulations.
+if it is for web ,w3c had defined the rules.
+>http/https
+http/2
+apache--vendor
+Server is harware with server software which process your requests.
+pysical servers---datacenters
+softwares
+>>Http versions:
+0.9--outdated
+1.0
+1.1
+2.x---recommended
+3.x---Latest
+Web server s/w---nginx,tomcat,nitti,jetty....etc
+jetty is inbuilt server in eclipse.
+
+A webserver is a s/w with below components.
+Catalina--is container or s/w which can run servlet programs.
+Servlets are mainly serverside web components which are used to create web pages.
+Jasper--is container or s/w which can run JSP programs.JSp are mainly serverside web components which are used to create web pages.
+Http Engine--this will handle http request
+Middleware services-----additional services provided by server vendors.by default we may have atlesst 6 middleware service.
+Example: Transaction management service ,connection pooling service ,lookup servicees.....etc
+Web server=catalina+Jasper+middleware services+http Engine
+
+App servers s/w------weblogic,websphere,jboss,glassfish,pramati....etc
+App = catalina+jasper+EJB container+MQ container+Middleware services+http Engine
+EJB container---used for running ejb programs
+MQ container---used for running messaging queue programs 
+Middleware services---a min of 12
+>http headers
+>Security certificates:
+To access any api,we are going to use http or https protocol.if we need more security,then better to switch to
+https protocl form http. 
+http---https---switching in SBI app.
+code level security and n/w level security
+http is not secure.Chances of hacking or data threft.
+https=Http+SSl(secure socket layer)
+SSl makes use of digital certificates.There are 2 types of certificates.
+1)self signed certificates: certificates that we/anybody can  create is called as self signed.
+not recommended for production environments.  abc
+USe for training and testing purpose.we shld know java.
+we are going to use the tool: keytool
+2)commercial certificates:certificates that we/anybody can  purchase from vendors is called as comercial certs.
+-use for producer
+-can be purcahsed from vendors like godaddy,verisgn,CA,degicert......etc
+
+code level security: java----private,public,protected
+Conclusion: self signed certs are not secure.
+These certificates are configured in servers by IT team or devops teams.
+>Every certifiate will have validity period.
+At server side, there will be certificate notification feature,which will prompt messages to admin in case of failures,validatiy expiry,correction...etc
+URL injections shld handled properly.
+
+>Collections basics like map,set,array
+>http methods
+>error code in http
+>client server architecture
+>producer
+>consumer
+>endpoint
+>crud:
+C-create
+r-read------------as a end user ---90%
+u-update
+d-delete
+
+Java----JDBC/Spring JDBC/Hibernate
+python---Sql alchemy
+API------------>RAML-Mulesoft/Tibco Api spec/openapi spec (Swagger API)....etc
+>https://www.openapis.org/
+
+Rest api are on http protcol.
+Python flask/Springboot/Spring MVC/rest.......
+JAXRs/Resteasy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GET: read data from your API
+POST: add new data to your API
+PUT: update existing data with your API
+PATCH: updates a subset of existing data with your API
+DELETE: remove data (usually a single resource) from your API
