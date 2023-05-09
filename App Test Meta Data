@@ -1,0 +1,8 @@
+{
+"id":1,
+"title":"ssdsadds",
+"description":"adhsajhhjsd",
+"published":false
+}-----Post
+======================
+http://localhost:8080/api/tutorials/1
