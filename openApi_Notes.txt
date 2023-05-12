@@ -1,4 +1,4 @@
-Open API
+﻿Open API
 ====================
 Day1:
 -----
@@ -92,8 +92,465 @@ API------------>RAML-Mulesoft/Tibco Api spec/openapi spec (Swagger API)....etc
 >https://www.openapis.org/
 
 Rest api are on http protcol.
-Python flask/Springboot/Spring MVC/rest.......
+Python flask/Springboot/Spring MVC/resteasy/scala/rest.......
 JAXRs/Resteasy
+===============================================================
+Day 2
+-----
+>Yaml:
+------
+Sonarqube code was written in Spring.
+
+configurations:
+In config files,we will have meta data.
+>config files can be written in below languages.
+1)XML---universal acceptable format---parsing huge xml or complex file is tedious.
+2)Properties------mainly for java/python based app.
+3)Yaml---------->We can write complicated data structure,universal,all programming lANGUAGE SUPPORTS yaml.Springboot also supports yaml.intendation means space issues.
+4)JSON------in the place of xml,we can use JSOn.JSON ia faster than XML.If you are using untrusted browser,then your JSON file is prone for hacking.For huge file,there might be perfomance impact,but not like XML.
+5)BSON---snimilar like json,but v faster than JSOn.
+mainly used for nosql db and data engineering technologies.
+
+srini can i use html?
+ans)html is only for frontend ,designining not for config or other uses.
+>>OPEN API supports JSON and YAML tyes.To work on this ,we do have multiple ediotors in market.
+Exa: Notepad++,atom,brackets,VS code,eclipse....etc
+>>
+https://codebeautify.org/
+
+>Swagger tools provides an option to convert yaml to json.
+-----------------------------------------
+>Internationalization:also called as i18n.Google language transalator.
+>Unicode formats:where ever we see i18n,that indicates it is unicode format.Every character in the world will have unique unicode number.
+UTF-16,UTF-32s
+>unicode will start with "\uxxx".Example: \uoB89
+https://unicode.org/charts/
+
+UTF-8 encoding means it doent support i18n.
+>>YAML:
+=======
+>Yaml stands for yet another markup language.
+>YAML supports UTF-8,UTF-16,UTF-32 encoding formats.
+>allows us to write completex data structures in yaml format.
+>yaml is language independent.
+> All Devops tools uses YAMl for configuration management.
+kubernites,Anisble,puppet....etc
+
+Drawbacks:
+>becareful with spaces.
+>Debugging will be difficult for complex files.
+>No breakpoints feature.
+
+
+Dont use tabs or tab button while writing YAML.
+
+To start with,always yaml file starts with:
+
+--- indicates starting point
+
+comments:   # Simple Examples
+
+String a = null;
+String aa="sdsasafdfdsfdf \n
+           dsfdsfdfsdfds";
+DAtatypes:
+-----------------
+
+string
+number
+integer
+boolean
+array
+object
+
+scalar datypes: which can hold single value.
+example:
+a: 5
+hr: srini
+z: 0xC
+state: Off
+val: null
+par: >
+    this is a multi-line string it
+    spans more than one
+    line
+
+Collections: for group of values to store.
+
+>>Like Openapi,we are having RAML--mulesoft,Apigee are main competetors.
+
+OPENAPI:
+-----------
+>https://rapidapi.com -->if you can access,please try to create an account.
+>Salesforce LWC+RAPID API+Apex code
+
+customer requested for weather forcasting widget/component--US.
+>customer didnt approved public api.
+>postman s/w
+===========================================================================
+Day3:
+------
+
+browser means useragent.
+>>API?Types?Architecture?
+API stands for application program interface.
+
+Now a days apis are used for Website development especially like amazon and flipkart.
+To display images on to the screen ,these people are going to place images in CDN networks.
+CDN--content delivery network servers.https://aws.amazon.com/cloudfront/--MIME components
+CDN has caching capabilities.
+
+AWS---CDN server for india,especially the main location is chennai,hyderabad.
+They are providing API.
+>for pictures,they had used CDN servers and for few pictures they had used base64 formats.
+>naukri.com----CV
+CV---->request---->Naukri--->Seerver will check request Header--->will check whether the request is valid-->response back to user agent(MIME formats in code)---pdf
+
+
+pdf----for generating pdf file,we had used PDFbox api.
+
+API blueprints or specification
+
+Amazon----ICICI-----these 2 partis shld follow common standards for better communication.
+
+Amazon--------CORS-----------ICICI
+cross origin resource sharing
+
+Amazon-----SBI
+ICIC gives permission to Amazon to process txs.they are going to use API.
+
+https/abcd.com/a/
+
+http
+
+categerios: public,private
+API protocols:
+1)RPC---grpc--microservices development
+2)REst
+3)Soap
+All are cross platform.
+>>Headers--content types
+
+browser----->request object(headers ans some data)--------->server------->process the request----
+	|																	  |
+	----------------------------------------response object--------------<-
+
+Assume i need a diffrent response based on type of browser from server.How?
+request Header
+
+akila---hotel---menu card(url)----server---meuitem----kitchen----prepare---prepareditem back
+	https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
+	
+	if we want to dig/explore more on headers,we can use the tool "fiddler".
+------
+>Open API basics and its architecture and flow?
+>Swagger tools overview.
+>Maven settings in Eclipse for demonistration-1.
+>>https://github.com/kolaparthisrini/Openapi_comcast/blob/main/mysql-connector-java-5.1.0-bin.jar
+
+******************************************
+1)You have a public API but no SDKS. You expect your clients to use cURL to use your API.
+2)You have an internal API, but no documentation. Your team’s engineers add functionality to endpoints willy-nilly and now it is hard to keep track of what parameters, and the types of each parameter, each endpoint expects.
+3)You have a product, but no API. You have no idea how to even create an API, documentation, or examples. How do I even REST?
+4)Dont want to compromise on security,while share confidential info about backends.
+=================================
+
+edge computing,micro computing,kube computing,AI,big data,Microservices.....etc
+amazon had shifted to microservices from monolithic.
+recently from microservices they shifted top monolithic for saving budget.
+Day 4
+--------
+OPEN API:w3c
+>is opensource.API documentation
+>alternative is RAMl+mulesoft/Swagger/Apigee/tibco.....etc
+>we are going to create the specification either in YAML or JSOn formats.
+>open api is a specification for designing http API or rest Api.
+>Using this open api standards,we can create testcases,sdk/code creation,APi testing,documentation of the projecctcan also be done.
+>Open API versions:
+3.1.0--latest
+3.0.3-----swagger
+2.x ------open API
+
+To implement or test/write code for OpenAPI specification,we going to use Swagger tools.
+>swagger hub=swagger editor+swagger UI+Swagger Code gen
+>swager editor
+>swagger UI
+>swagger code gen
+
+    https://swagger.io/tools/swagger-editor/
+    https://swagger.io/tools/swagger-ui/
+    https://swagger.io/tools/swagger-codegen/ ===>Eclipse
+>For codegen,we need swagger codegen jar file: swagger-codegen-cli-2.3.1.jar--using this codegen we are going to generate project or sdk.
+
+To design any Open API spec,we need to go thru these phases.
+1)Requirement Analysis
+2)Designing---writing the specification
+3)Build
+4)Testing
+
+Thru API spec and implementation, we are going to perform CRUD operations on backend.
+>Open APi works on http protocol.To perform crud operation,we are going to use http methods.
+GET: read data from your API. similar like select in db.
+POST: add new data to your API.similar like insert in db.
+PUT: update existing data with your API.similar like update in db.
+DELETE: remove data (usually a single resource) from your API.similar like delete in db.
+
+>>Each http method will go thru some status code to find the status of the operation.
+status might be success or failure.
+
+Springboot+Hibernate---mysql
+
+
+http methods,security,status,urls,terms and conditions,licensing---OPen API
+
+-------------------------------------------------
+Day5:
+
+>OpenAPI can also create project structure.
+
+In openapi we are going to call it as "SCAFFOLDING".SCAFFOLDING is a process of creating project structure and its requirements artifacts.It is possible thru "swagger-codegen-cli" tool.
+
+MAven/Gradle
+>Maven is build tool.
+>Creating a specification as per business needs---->validating the specification------>once approval is completed--->do scaffolding as per the specification(manually creating/use open api capabilities)----->start writing the code as per your requirement/language---->TEsting---->Deployment
+>to use the above swagger codegen tool,we neeed to use java capabilities.Use the bellow command.
+java -jar 
+
+http://localhost:8080/swagger-ui/index.htm
+>Specification:
+=====================
+case1: API--private-auth
+
+CustomerName: Wellsforgo---producer
+This bank has its own dev team.---They are going to provide Endpoints.
+
+Implementation: Comcast--dev team ---consumer
+
+case2: 
+
+CustomerName: xyz company-----500--API--private-auth
+Implementation: Comcast--dev team ---infra---API--Code
+
+case3: 
+
+CustomerName: comcast-internal project===>private API---Authentication
+Implementation: Comcast
+
+case4: 
+
+CustomerName: WHO--covid---public--https://covid19.ddc.moph.go.th/api/Cases/today-cases-line-lists---No need of credentials
+Implementation: Comcast
+
+
+>in rest,final url is called as ENDpoint.
+>Operations means http methods like get/put/post/delete
+>status of the operations. 200,201,500
+>Always the creator of the endpoints documented in specification.
+>License info of creator.
+>versionn of specification,authentication info.......etc
+
+
+>Open APi-spec: 3 main sections:
+
+section 1: Metainfo about openapi(3.x).
+Section 2: Endpoint info like parameters,request bodies and response along with status code.
+Section 3: Reusable components:
+           Schema details of datamodel,security and if any other components.
+
+
+Matrix parameters--$,{}
+
+===>security scanners restrictions
+
+{
+name: "comcast Mobile APP"
+}
+
+path params,tags,licensing,matrix params,error codes,authentication
+
+openapi: 3.0.0  #Section 1 for Path and Endpoint URLS
+info:
+ version: 1.0.0
+ title: Comcast - MOBILE APP API
+ : Simple Mobile APP API to interact with Mongo
+
+servers:
+ - url: https://comcast.com/bnk1/dw/v1
+   description: This is for desktop web
+ - url: https://comcast.com/bnk/spa/v1
+   description: This is for Mobile web
+
+# Section 2 for Path and Endpoint URLS
+paths:
+ /getMovies:
+   get:
+   description: returns a arraylist of movie objects
+   
+#Responss
+responses:
+  '200':
+   content: 
+   application/json:
+    schema:
+     type: 
+ http://example.com/survey
+>>>Reserved :https://datatracker.ietf.org/doc/html/rfc3986#section-2.2
+=====================================================================================
+Day 7:
+----------------
+
+>get put redirect design pattern
+>get put post redirect design pattern
+URL/Base URL: https://www.google.com/
+
+Becareful while using or selecting query paramsor path params.
+Be careful while using special characters.??!@~$+,;.w3c
+
+null
+server---server crash
+
+1)encoding/encryption and decoding
+
+you will place ur credentials in either github config file,aws secrets manager/hashicorp vault......etc
+
+/,--%2F
+??----
+\\----\
+""https://datatracker.ietf.org/doc/html/rfc3986
+
+citi bank----antisamy
+
+ANTISAMY security filters===will filter your url
+@
+Structure:
+
+<http/https>://server url/endpoint_path/query_params
+
+Example: https://www.google.com/abc?q=comcast
+https://yandex.com/search/?text=comcast&lr=20934
+q=comcast
+abc--->endpoint path
+
+https://www.google.com/search?q=comcast&newwindow=1
+
+Openapi specification creation is splitted into 2 types.
+1)using yaml file-----from design
+2)USing code----documentation---from coding,we are going to create specification and documentation.
+
+===>DAtatypes:
+-----------------
+string---alfanumeric
+integer
+boolean
+array
+object
+
+https://www.google.com/abc?q=comcast====>Query parameters.q datatype is 
+https://www.google.com/abc/1======>Path parameters
+https://www.google.com/abc/srini---runtime
+
+We are having http headers and also we can create userdefined headers.
+>headers are present in both request and response.
+Evry header will have "key: value"
+>cookies parameters
+
+In asession,we can also store values.
+session management can be done in below ways.
+1)cookies---client side
+2)http session object---server side
+3)URL rewriting
+4)Hidden form fields
+
+>how do we write a spec,with query param and path param.
+-------------------------------------
+collections and constants.
+>list
+>constants:enum is enumerated datatypes.This is for grouping constants.
+
+syntax:
+enum:[value1,value2.....valuen]
+
+Example:
+enum: [comcast,python,netcracker]
+
+
+- in  is keyword used for identifying path and query params.
+
+https://www.google.com/abc/apple
+https://www.google.com/abc/admin
+https://www.google.com/abc/{productname}
+"required" in parameter indicates it is a mandetory field.
+---------->>
+paths:
+==============
+ /abc/{productname}:
+   get:
+    description: >
+	This will fetch product prices.
+	sdfkjdskjfsd
+	sdfsdfds
+    parameters:
+	  - in: path
+	    name: productname
+		schema:
+		 type: string
+		 enum: [apple,admin,windows]
+		required: true
+		
+>>>>
+query:
+=========
+ /abc?:
+   get:
+    description: >
+	This will fetch product prices.
+	sdfkjdskjfsd
+	sdfsdfds
+    parameters:
+	  - in: query
+	    name: productname
+		schema:
+		 type: string
+
+
+Headers:
+========
+paths:
+ /abc:
+   get:
+    parameters:
+	  - in: headers
+	    name: x-cache
+		schema:
+		 type: string
+		required: true
+
+Cookie:
+=======
+paths:
+ /abc:
+   get:
+    parameters:
+	  - in: cookie
+	    name: x-cache
+		schema:
+		 type: string
+		 default: 0
+
+responses:
+-----------
+responses:
+   '200':
+      content:
+	   application/json:
+      description: success.
+   '500':
+      description: server error
+	'404':
+      description: resource not found
+	  
+
+	  
 
 
 
@@ -134,8 +591,14 @@ JAXRs/Resteasy
 
 
 
-GET: read data from your API
-POST: add new data to your API
-PUT: update existing data with your API
-PATCH: updates a subset of existing data with your API
-DELETE: remove data (usually a single resource) from your API
+
+
+
+
+
+
+
+
+
+
+
