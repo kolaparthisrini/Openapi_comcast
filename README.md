@@ -7,3 +7,11 @@ https://swagger.io/tools/swagger-codegen/
 https://swagger.io/tools/swagger-ui/
 https://swagger.io/tools/swagger-editor/
 </pre>
+<br>
+Security Schemes:
+<pre>
+http – for Basic, Bearer and other HTTP authentications schemes
+apiKey – for API keys and cookie authentication
+oauth2 – for OAuth 2
+openIdConnect – for OpenID Connect Discovery
+</pre>
