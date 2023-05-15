@@ -1,0 +1,29 @@
+/abcdget:
+  responses:
+        '201':
+          description: Response
+          content:
+            application/json:
+              schema:
+			  title: Installation Token
+      type: object
+      properties:
+        token:
+          type: string
+        expires_at:
+          type: string
+---------------------------------------------------------------------
+/abcdget1:
+  responses:
+        '201':
+           content:
+            application/json:
+              schema:
+			  title: Installation Token
+      description: Authentication token for a GitHub App installed on a user or org.
+      type: object
+      properties:
+        token:
+          type: string
+        expires_at:
+          type: string
